@@ -1,0 +1,125 @@
+/*NAVBAR*/
+#navbar{
+    z-index: 1;
+}
+
+.icon-success{
+  color: #da5858;
+}
+
+/*CARDS*/
+#cards{
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
+#footer{
+    background-color: rgb(255, 255, 255);
+    background-size: 50px 50px;
+}
+
+/*MIW EXPERT*/
+.miw{
+    color: #4a1410;
+}
+
+/* MODO NOCTURNO */
+.container-btn-mode{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+  }
+  .btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+  }
+  .btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+  }
+  .btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .active{
+    background-color:black;
+    color:#ffcd5c !important;
+  }
+  .dark-mode{
+    background-color: #0e0e0e;
+    transition:background-color .5s;
+  }
+  .dark-mode .card{
+    background-color: #000000;
+  }
+  .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+    color:white;
+  }
+  .dark-mode .btn-mode{
+    background-color:#1A1C1E;
+    border:1px solid white;
+    color:white;
+  }
+
+/*FORMULARIO CONTACTO*/
+.section-title {
+	text-align: center;
+	padding: 25px 0;
+}
+.contact-form {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 40px 30px;
+}
+.contact-form .btn {
+	background: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 50px;
+	letter-spacing: 2px;
+}
+.map-area {
+	width: 600px;
+	height: 465px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.map-area iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*responsive*/
+@media (max-width: 991px) {
+	.contact-form {
+		margin-bottom: 30px;
+	}
+	.map-area {
+		width: 100%;
+		height: 400px;
+	}
+}
